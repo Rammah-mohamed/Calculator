@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>Calculator</title>
-</head>
-<body>
-  <div class="container">
-    <div class="calculator">
-      <form>
-        <div class='display'>
-          <input type="text" name='display'>
-        </div>
-        <div>
-          <input type="button" value="ac" class="ac">
-          <input type="button" value="de" class="del">
-          <input type="button" value="." class="btn">
-          <input type="button" value="/" class="btn">
-        </div>
-        <div>
-          <input type="button" value="7" class="btn">
-          <input type="button" value="8" class="btn">
-          <input type="button" value="9" class="btn">
-          <input type="button" value="*" class="btn">
-        </div>
-        <div>
-          <input type="button" value="4" class="btn">
-          <input type="button" value="5" class="btn">
-          <input type="button" value="6" class="btn">
-          <input type="button" value="-" class="btn">
-        </div>
-        <div>
-          <input type="button" value="1" class="btn">
-          <input type="button" value="2" class="btn">
-          <input type="button" value="3" class="btn">
-          <input type="button" value="+" class="btn">
-        </div>
-        <div>
-          <input type="button" value="00" class="btn">
-          <input type="button" value="0" class="btn">
-          <input type="button" value="=" class='equal'>
-        </div>
-      </form>
-    </div>
-  </div>
-  
-  <script src="main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<h1 class="text">Calculator App</h1>
+				<button class="mode">Scientific Mode</button>
+				<div class="calculator">
+					<form>
+						<div class="display">
+							<input type="text" name="display" />
+						</div>
+						<div>
+							<input type="button" value="ac" class="ac" />
+							<input type="button" value="de" class="del" />
+							<input type="button" value="." class="btn" />
+							<input type="button" value="/" class="btn" />
+							<input type="button" value="x²" class="btn scientific square" />
+							<input type="button" value="sin" class="btn scientific sin" />
+						</div>
+						<div>
+							<input type="button" value="7" class="btn" />
+							<input type="button" value="8" class="btn" />
+							<input type="button" value="9" class="btn" />
+							<input type="button" value="*" class="btn" />
+							<input type="button" value="√" class="btn scientific root" />
+							<input type="button" value="cos" class="btn scientific cos" />
+						</div>
+						<div>
+							<input type="button" value="4" class="btn" />
+							<input type="button" value="5" class="btn" />
+							<input type="button" value="6" class="btn" />
+							<input type="button" value="-" class="btn" />
+							<input
+								type="button"
+								value="|x|"
+								class="btn scientific absolute" />
+							<input type="button" value="tan" class="btn scientific tan" />
+						</div>
+						<div>
+							<input type="button" value="1" class="btn" />
+							<input type="button" value="2" class="btn" />
+							<input type="button" value="3" class="btn" />
+							<input type="button" value="+" class="btn" />
+							<input type="button" value="e" class="btn scientific e" />
+							<input type="button" value="log" class="btn scientific log" />
+						</div>
+						<div>
+							<input type="button" value="00" class="btn" />
+							<input type="button" value="0" class="btn" />
+							<input type="button" value="=" class="equal" />
+							<input type="button" value="𝛑" class="btn scientific pi" />
+							<input type="button" value="ln" class="btn scientific ln" />
+						</div>
+					</form>
+				</div>
+				<h4 class="footer">Made By <span>Dev.Rammah</span></h4>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
 </html>
